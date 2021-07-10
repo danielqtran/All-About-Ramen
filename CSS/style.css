@@ -1,0 +1,80 @@
+/* Navigation */
+
+nav {
+    display: grid;
+    height: 8vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo navLinks navSearch";
+    font-family: 'Oxygen', sans-serif;
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navLinks {
+    grid-area: navLinks;
+    align-self: center;
+    justify-self: center;
+}
+
+.navLinks a {
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.navSearch {
+    grid-area: navSearch;
+    align-self: center;
+    justify-self: flex-end;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 100px 5px 5px;
+    color: gray;
+}
+
+/* Hero */
+
+.hero {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bigHero upperHero" "bigHero lowerHero";
+    font-family: 'Oxygen', sans-serif;
+}
+
+.bigHero {
+    grid-area: bigHero;
+    background-image: url(../images/cody-chan-BLaiOhpirAQ-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.upperHero {
+    grid-area: upperHero;
+    background-image: url(../images/anton-nazaretian-JCHlsKSgbSk-unsplash.jpg);
+    background-size: cover;
+}
+
+.lowerHero {
+    grid-area: lowerHero;
+    background-image: url(../images/kae-ng-qjM403Kjw00-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.heroTitle {
+    font-size: 4rem;
+    color: white;
+}
+
+.heroSubtitle {
+    color: white;
+}
