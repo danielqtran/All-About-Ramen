@@ -10,7 +10,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0426KMH17"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-Q0426KMH17');
@@ -18,8 +21,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -27,41 +30,166 @@
 </head>
 
 <body>
-    <section class="nav">
-        <nav>
-            <div class="logo">
-                All About Ramen
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">All About Ramen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-            <div class="navLinks">
-                <a href="#">Recipes</a>
-                <a href="#">Restaurants</a>
-                <a href="#">Community</a>
-            </div>
-            <div class="navSearch">
-                Search...
-            </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
     <section>
-        <div class="hero">
-            <div class="bigHero">
-                <div class="heroTitle">Ramen Trends</div>
-                <div class="heroSubtitle">See what people are slurping these days</div>
+        <div class="row hero">
+            <div class="col-12 col-lg-8 bigHero">
+                <div class="heroText">
+                    <div class="heroTitle">
+                        <h1 class="display-1">Ramen Trends</h1>
+                    </div>
+                    <div class="heroSubtitle">
+                        <h3>See what people are slurping these days</h3>
+                    </div>
+                </div>
             </div>
-            <div class="upperHero">
-
-            </div>
-            <div class="lowerHero">
-
+            <div class="col-12 col-lg-4">
+                <div class="row">
+                    <div class="upperHero">
+                        <h4>Restaurant Spotlight</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lowerHero">
+                        <h4>Recipes</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="main">
-
-    </section>
+    <div class="main row">
+        <div class="col-12 col-lg-9 posts">
+            <h2>Latest Posts</h2>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/hari-panicker-2t28IxSTqF4-unsplash.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Ten Easy to Make Ramen Broths</h5>
+                            <p class="card-text">We get it. You're busy with work, family, friends, hobbies, etc. But
+                                you still love ramen too, and want to eat something healthier than instant ramen. We
+                                here at <em>All About Ramen</em> are here with ten extremely delicious, yet easy to make
+                                broths.</em></p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/matt-chris-pua-vQQJeTpBmmM-unsplash.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Instant Ramen to Buy</h5>
+                            <p class="card-text">The instant ramen aisle at large Asian supermarkets can be daunting and
+                                confusing, even if you are fluent in Japanese, Korean, or Thai. Learn some of the most
+                                popular brands and flavors.</em></p>
+                            <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/kristian-angelo-nnkySNpYk5Q-unsplash.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Ramen Tips from Restaurant Chefs</h5>
+                            <p class="card-text"><em>Kaizen</em> is a Japanese term meaning "continuous improvement". No
+                                matter your skill level at making ramen, there is always room to improve!</p>
+                            <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row postNav">
+                <a href="">Older Posts</a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 highlights">
+            <h2>Highlights</h2>
+            <div class="card bg-dark text-white">
+                <img src="images/julian-nielfa-gracia-j1VGWgyJ0Xo-unsplash.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Local Ramen Shop</h5>
+                    <p class="card-text">Neighborhood Ramen is a true diamond in the rough/hole in the wall. An unassuming
+                        exterior hides some of the best shoyu broths west of the river.</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="images/antoinette-c-mU3c7vhtCrg-unsplash.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Black Garlic Tokotsu</h5>
+                    <p class="card-text">The addition of <em>black garlic</em> gives this tokotsu a complex umami note that is well worth the search for this unique ingredient.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="footer">
-
+        <div class="row">
+            <div class="col-md-6">All About Ramen
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2">Posts</div>
+            <div class="col-md-2">Highlights</div>
+            <div class="col-md-2">About Us</div>
+        </div>
     </section>
 </body>
 
