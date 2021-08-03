@@ -1,5 +1,12 @@
 /* Navigation */
 
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+}
+
+.navbar {
+    font-size: larger;
+}
 
 /* Hero */
 
@@ -41,6 +48,7 @@
     padding-right: 2rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
+    cursor: pointer;
 }
 
 .upperHero,
@@ -69,7 +77,6 @@
 
 .card {
     border: 0px;
-    margin: 30px;
 }
 
 .card-title {
@@ -77,7 +84,7 @@
 }
 
 .card-title:hover {
-    text-decoration: solid underline navy 5px;
+    text-decoration: underline navy;
 }
 
 .highlights {
@@ -85,7 +92,7 @@
 }
 
 .highlights .card:hover {
-    box-shadow: 5px 5px gray;
+    box-shadow: 7px 7px #198754;
 }
 
 .posts,
@@ -110,16 +117,28 @@
 
 /* Footer */
 
-.footer {
-    border-top: 1px solid black;
-}
-
-.footer .row {
+/* .footer .row {
     margin: 30px;
+} */
+
+.footer {
+    color: white !important;
 }
 
-.footer .mb-3 {
-    width: 50%;
+.footer input {
+max-width: 75%;
+}
+
+.footer .fab {
+    font-size: 2em;
+}
+
+.footer .nav-link {
+    color: white !important;
+}
+
+.footer .nav-link:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width:992px) {
@@ -131,5 +150,9 @@
 
     .hero {
         height: auto;
+    }
+
+    .footer input {
+        max-width: 100%;
     }
 }
